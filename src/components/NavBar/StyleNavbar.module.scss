@@ -1,0 +1,70 @@
+
+header{
+
+position: fixed;
+z-index: 5000;
+left: 0;
+top: 0;
+width: 100%;
+background-color: transparent;
+padding: 10px 0;
+
+#ConteinerCabecalho{
+
+position: relative;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+align-items: center;
+justify-content: space-between;
+padding: 0.5em 1rem;
+
+#ConteinerLogo{
+
+padding: 0 20px;
+
+img{
+width: 100%;
+height: auto;
+}
+
+}
+
+.ConteinerNavegacao{
+
+text-align: center;
+margin-right: auto;
+margin-left: auto ;
+
+ul{
+
+display: flex !important;
+flex-basis: auto;
+flex-direction: row;
+
+
+li{
+
+.StyleButton{
+
+font-family: var(--fontTitle);
+font-weight: 700;
+font-size: 1em;
+text-transform: uppercase;
+padding: 0 15px;
+letter-spacing: 2px;
+padding: 0 8px;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+

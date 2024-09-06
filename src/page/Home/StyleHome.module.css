@@ -1,0 +1,531 @@
+main #Home {
+  background-image: url(../../asset/banner-1.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 30px 0 0;
+  width: 100%;
+  background-size: auto;
+}
+main #Home #ConteinerHome {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+main #Home #ConteinerHome .ConteinerText {
+  padding: 1em 3em;
+  font-family: var(--fontTitle);
+  color: #fff;
+}
+main #Home #ConteinerHome .ConteinerText .BoxText {
+  padding-top: 2em;
+  margin: 0 -20px;
+  line-height: 2.5;
+}
+main #Home #ConteinerHome .ConteinerText .BoxText h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  padding-bottom: 0.5em;
+  line-height: 1.1;
+}
+main #Home #ConteinerHome .ConteinerText .BoxText p {
+  opacity: 0.8;
+  margin-top: -1em;
+  line-height: 2;
+}
+main #Home #ConteinerHome .ConteinerText .BoxText button {
+  background-color: #131a48;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 30px;
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  margin: 40px 0 0;
+}
+main #Home #ConteinerHome .ConteinerImage {
+  width: 100%;
+  padding: 0 3em;
+  margin-top: 4em;
+}
+main #Home #ConteinerHome .ConteinerImage img {
+  width: 100%;
+  height: auto;
+}
+main #Sobre {
+  padding: 100px 0;
+  width: 100%;
+}
+main #Sobre #ConteinerSobre {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre {
+  padding: 0 20px;
+  margin: 0 -20px;
+  font-family: var(--fontTitle);
+  color: #000;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre {
+  padding: 0 40px;
+  line-height: 3.5;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre h3 {
+  font-size: 1.5em;
+  color: #2273f8;
+  line-height: 1;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre h1 {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre p {
+  font-size: 1em;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre ul {
+  padding-top: 1em;
+  line-height: 2;
+}
+main #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre ul li {
+  font-size: 1em;
+  font-weight: bold;
+}
+main #Sobre #ConteinerSobre .ConteinerImgSobre {
+  width: 100%;
+  padding: 0 3em;
+}
+main #Sobre #ConteinerSobre .ConteinerImgSobre .BoxImgSobre {
+  padding: 0 20px;
+  margin: 0 -20px;
+}
+main #Sobre #ConteinerSobre .ConteinerImgSobre .BoxImgSobre img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+main #Servicos {
+  display: block;
+  width: 100%;
+  padding: 90px 0 30px;
+}
+main #Servicos #ConteinerServicos {
+  padding: 0 40px;
+}
+main #Servicos #ConteinerServicos .ConteinerCabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+main #Servicos #ConteinerServicos .ConteinerCabecalho .BoxTextCabecalho {
+  text-align: center;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+  margin: 0 17em;
+  padding: 20px;
+  line-height: 1.5;
+  font-family: var(--fontTitle);
+  color: #000;
+}
+main #Servicos #ConteinerServicos .ConteinerCabecalho .BoxTextCabecalho h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+main #Servicos #ConteinerServicos .ConteinerCabecalho .BoxTextCabecalho p {
+  font-size: 1em;
+  opacity: 0.8;
+}
+main #Servicos #ConteinerServicos .ConteinerService {
+  padding: 3em 40px;
+}
+main #Servicos #ConteinerServicos .ConteinerService .BoxService {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+main #Produto {
+  padding: 6em 0;
+  width: 100%;
+  margin: 0 -25px;
+}
+main #Produto #ConteinerProduto {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+main #Produto #ConteinerProduto .ConteinerCabecalhoProduto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 6em;
+  margin: 0 -25px;
+}
+main #Produto #ConteinerProduto .ConteinerCabecalhoProduto .BoxTextProduto {
+  padding: 0 3em;
+  margin: 0 17em;
+  font-family: var(--fontTitle);
+  color: #000;
+  text-align: center;
+  line-height: 2;
+}
+main #Produto #ConteinerProduto .ConteinerCabecalhoProduto .BoxTextProduto h1 {
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 1.3;
+  padding-bottom: 0.5em;
+}
+main #Produto #ConteinerProduto .ConteinerCabecalhoProduto .BoxTextProduto p {
+  font-size: 1em;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+main #Produto #ConteinerProduto .ConteinerProdutos {
+  padding: 0 40px;
+  margin: 0 15px;
+}
+main #Produto #ConteinerProduto .ConteinerProdutos .BoxProduto {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main #Reviews {
+  padding: 90px 0 135px;
+  width: 100%;
+  background-image: url("../../asset/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main #Reviews #ConteinerReviews {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+main #Reviews #ConteinerReviews .ConteinerCabecalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 40px;
+  padding-bottom: 3.5em;
+  margin: 0 -25px;
+}
+main #Reviews #ConteinerReviews .ConteinerCabecalo .BoxText {
+  color: #fff;
+  text-align: center;
+  font-family: var(--fontTitle);
+  line-height: 2.5;
+  width: 60%;
+}
+main #Reviews #ConteinerReviews .ConteinerCabecalo .BoxText h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 40px;
+  padding-bottom: 0.5em;
+}
+main #Reviews #ConteinerReviews .ConteinerCabecalo .BoxText p {
+  font-size: 1em;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+main #Reviews #ConteinerReviews .ConteinerReview {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  padding: 0 60px;
+  overflow: hidden;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel {
+  display: flex;
+  min-width: 100%;
+  border: 1px solid red;
+  transition: transform 0.5s ease-in-out;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview {
+  min-width: 100%;
+  padding-bottom: 2em;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+  margin: 0 15px;
+  color: #fff;
+  font-family: var(--fontTitle);
+  line-height: 2;
+  text-align: center;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .conteinerPerfil {
+  padding: 0 10px;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .conteinerPerfil img {
+  width: 80%;
+  border-radius: 50%;
+  height: auto;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .conteinerPerfil h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .conteinerPerfil h5 {
+  font-size: 1em;
+  opacity: 0.8;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides p {
+  font-size: 1em;
+  opacity: 0.8;
+  padding: 2em;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .ConteinerStar {
+  font-family: IcoFont !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  padding-top: 1.5em;
+  color: #f39c12 !important;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerControler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid red;
+}
+main #Reviews #ConteinerReviews .ConteinerReview #ConteinerControler button {
+  cursor: pointer;
+  width: 25px;
+  display: inline-block;
+  height: 10px;
+  margin: 0 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin: 0 4px;
+  border: 0;
+  outline: 0;
+}
+main #Perguntas {
+  display: block;
+  width: 100%;
+  padding: 90px 0 72px;
+}
+main #Perguntas #ConteinerPerguntas {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+main #Perguntas #ConteinerPerguntas #ConteinerTitlePerguntas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+main #Perguntas #ConteinerPerguntas #ConteinerTitlePerguntas .BoxText {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-height: 1px;
+  padding: 0 15px;
+  font-family: var(--fontTitle);
+  color: #000;
+  text-align: center;
+}
+main #Perguntas #ConteinerPerguntas #ConteinerTitlePerguntas .BoxText h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+main #Perguntas #ConteinerPerguntas #ConteinerTitlePerguntas .BoxText p {
+  font-size: 1em;
+  opacity: 0.8;
+}
+main #Perguntas #ConteinerPerguntas .ConteienerBoxPerguntas {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin: 0 -15px;
+  padding: 6em 1em;
+}
+main #Perguntas #ConteinerPerguntas .ConteienerBoxPerguntas #BoxPerguntas {
+  flex: 0 0 50%;
+  width: 50%;
+}
+main #Perguntas #ConteinerPerguntas .ConteienerBoxPerguntas #conteinerImg {
+  flex: 0 0 50%;
+  width: 50%;
+}
+main #Perguntas #ConteinerPerguntas .ConteienerBoxPerguntas #conteinerImg .BoxImagem {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+main #Perguntas #ConteinerPerguntas .ConteienerBoxPerguntas #conteinerImg .BoxImagem img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+main #Contato {
+  padding: 90px 0 85px;
+  width: 100%;
+}
+main #Contato #ConteinerContato {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+main #Contato #ConteinerContato .ConteinerCabecalho {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+main #Contato #ConteinerContato .ConteinerCabecalho .BoxText {
+  padding: 0 10px;
+  margin: 0 -15px;
+  font-family: var(--fontTitle);
+  color: #000;
+}
+main #Contato #ConteinerContato .ConteinerCabecalho .BoxText h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+main #Contato #ConteinerContato .ConteinerCabecalho .BoxText p {
+  font: 1em;
+  opacity: 0.8;
+}
+main #Contato #ConteinerContato .ConteinerInfo {
+  display: flex;
+  width: 100%;
+  padding-top: 6em;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo {
+  display: flex;
+  width: 100%;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .InfoContato {
+  flex: 0 0 43.333333%;
+  max-width: 43.333333%;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .InfoContato .ElementInfo {
+  display: flex;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: hidden;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .InfoContato .ElementInfo span {
+  font-size: 30px;
+  color: #2273f8;
+  border: 1.2px solid #2273f8;
+  border-radius: 4px;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  line-height: 55px;
+  text-align: center;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .InfoContato .ElementInfo .ConteinerText {
+  font-family: var(--fontTitle);
+  padding: 0 10px;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .InfoContato .ElementInfo .ConteinerText p {
+  font-weight: 500;
+  font-size: 1em;
+  color: #555;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm {
+  padding: 0 10px;
+  margin: 0 -15px;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm form * {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm form input {
+  height: 50px;
+  border: 1px solid #e6f0fa;
+  font-size: 1em;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm form textarea {
+  border: 1px solid #495057;
+  padding-top: 12px;
+  font-size: 14px;
+}
+main #Contato #ConteinerContato .ConteinerInfo .BoxInfo .ConteinerForm form button {
+  max-width: 100px;
+  background-color: #2273f8;
+  border: 0;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 65px 0 20px;
+  background-color: #1c1c1c;
+  overflow: hidden;
+}
+footer #ConteinerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 3;
+  color: #fff;
+  font-family: var(--fontTitle);
+}
+footer #ConteinerFooter h4 {
+  font-size: 1.5em;
+}
+footer #ConteinerFooter .BoxRedeSocial {
+  display: flex;
+}
+footer #ConteinerFooter .BoxRedeSocial span {
+  display: block;
+  background-color: #2273f8;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  margin: 0 5px;
+  text-align: center;
+}
+footer #ConteinerFooter p {
+  font-size: 1em;
+}/*# sourceMappingURL=StyleHome.module.css.map */

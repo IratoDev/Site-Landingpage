@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+}
+header #ConteinerCabecalho {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1rem;
+}
+header #ConteinerCabecalho #ConteinerLogo {
+  padding: 0 20px;
+}
+header #ConteinerCabecalho #ConteinerLogo img {
+  width: 100%;
+  height: auto;
+}
+header #ConteinerCabecalho .ConteinerNavegacao {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+header #ConteinerCabecalho .ConteinerNavegacao ul {
+  display: flex !important;
+  flex-basis: auto;
+  flex-direction: row;
+}
+header #ConteinerCabecalho .ConteinerNavegacao ul li .StyleButton {
+  font-family: var(--fontTitle);
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0 15px;
+  letter-spacing: 2px;
+  padding: 0 8px;
+}/*# sourceMappingURL=StyleNavbar.module.css.map */
