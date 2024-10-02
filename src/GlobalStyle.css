@@ -8,4 +8,13 @@
 
 :root {
   --fontTitle:"Raleway";
+}
+
+.element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.element.visible {
+  opacity: 1;
 }/*# sourceMappingURL=GlobalStyle.css.map */

@@ -8,7 +8,7 @@ import { ElementProduto } from "../../components/ElementosPage";
 import { ElementSanfona } from "../../components/ElementosPage";
 import { MenuMobile } from "../../components/NavBar";
 import { Element } from "react-scroll";
-import { ObservedElement } from "../../Mycontext/Context";
+import { ObservedElement} from "../../Mycontext/Context";
 
 //imagens:
 //Relogios
@@ -121,6 +121,7 @@ return (
 </Element>
 
 <Element name="Sobre">
+<ObservedElement id="element2">
 <section id={StyleHome.Sobre} >
 
 <div name="Sobre" id={StyleHome.ConteinerSobre}>
@@ -160,9 +161,11 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 <Element name="Servicos">
+<ObservedElement id="element3">
 <section id={StyleHome.Servicos}>
 
 <div id={StyleHome.ConteinerServicos}>
@@ -207,9 +210,11 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 <Element name="Produto">
+<ObservedElement id="element4">
 <section id={StyleHome.Produto}>
 
 <div id={StyleHome.ConteinerProduto}>
@@ -244,9 +249,11 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 <Element name="Reviews">
+<ObservedElement id="element5">
 <section id={StyleHome.Reviews}>
 
 <div id={StyleHome.ConteinerReviews}>
@@ -386,9 +393,11 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 <Element name="Perguntas">
+<ObservedElement id="element6">
 <section id={StyleHome.Perguntas}>
 
 <div id={StyleHome.ConteinerPerguntas}>
@@ -427,9 +436,11 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 <Element name="Contato">
+<ObservedElement id="element7">
 <section id={StyleHome.Contato}>
 
 <div id={StyleHome.ConteinerContato}>
@@ -505,6 +516,7 @@ return (
 </div>
 
 </section>
+</ObservedElement>
 </Element>
 
 </main>
