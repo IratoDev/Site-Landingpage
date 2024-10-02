@@ -7,7 +7,7 @@ import ElementService from "../../components/ElementosPage";
 import { ElementProduto } from "../../components/ElementosPage";
 import { ElementSanfona } from "../../components/ElementosPage";
 import { MenuMobile } from "../../components/NavBar";
-
+import { Element } from "react-scroll";
 
 //imagens:
 //Relogios
@@ -31,6 +31,7 @@ export default function HomePage() {
 
 //CarroselReview
 
+// eslint-disable-next-line
 const [Focus, setFocus]=useState("Slide1");
 
 const[CurrentItem, setCurrentItem] = useState(0);
@@ -79,7 +80,8 @@ return (
 
 <main>
 
-<section id={StyleHome.Home}>
+<Element name="Home">
+<section id={StyleHome.Home} className="Home">
 
 <div id={StyleHome.ConteinerHome}>
 
@@ -112,10 +114,12 @@ return (
 </div>
 
 </section>
+</Element>
 
-<section id={StyleHome.Sobre}>
+<Element name="Sobre">
+<section id={StyleHome.Sobre} >
 
-<div id={StyleHome.ConteinerSobre}>
+<div name="Sobre" id={StyleHome.ConteinerSobre}>
 
     <div className={StyleHome.ConteinerTextSobre}>
 
@@ -152,7 +156,9 @@ return (
 </div>
 
 </section>
+</Element>
 
+<Element name="Servicos">
 <section id={StyleHome.Servicos}>
 
 <div id={StyleHome.ConteinerServicos}>
@@ -197,7 +203,9 @@ return (
 </div>
 
 </section>
+</Element>
 
+<Element name="Produto">
 <section id={StyleHome.Produto}>
 
 <div id={StyleHome.ConteinerProduto}>
@@ -232,7 +240,9 @@ return (
 </div>
 
 </section>
+</Element>
 
+<Element name="Reviews">
 <section id={StyleHome.Reviews}>
 
 <div id={StyleHome.ConteinerReviews}>
@@ -372,7 +382,9 @@ return (
 </div>
 
 </section>
+</Element>
 
+<Element name="Perguntas">
 <section id={StyleHome.Perguntas}>
 
 <div id={StyleHome.ConteinerPerguntas}>
@@ -411,7 +423,9 @@ return (
 </div>
 
 </section>
+</Element>
 
+<Element name="Contato">
 <section id={StyleHome.Contato}>
 
 <div id={StyleHome.ConteinerContato}>
@@ -487,6 +501,7 @@ return (
 </div>
 
 </section>
+</Element>
 
 </main>
 

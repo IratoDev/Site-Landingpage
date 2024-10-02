@@ -1,6 +1,6 @@
 
 import StyleNavBar from "./StyleNavbar.module.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 import { useMyContext } from "../../Mycontext/Context";
 
@@ -12,7 +12,7 @@ import logo2 from "../../asset/logo-scroll.png";
 export default function NavBar(){
 
 const { ButtonMenu, setButtonMenu } = useMyContext();
-const [Nav,setNav] = useState(false);
+const [Nav] = useState(false);
 const [scroll, setScroll] = useState(0);
 const [Width, setWidth] = useState(window.innerWidth);
 
@@ -73,13 +73,13 @@ return <header style={NavBarStyle}>
 
 <ul>
 
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">home</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">sobre Nos</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">serviços</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">produto</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">reviews</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">perguntas</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="/">contato</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Home">home</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Sobre">sobre Nos</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Servicos">serviços</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Produto">produto</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Reviews">reviews</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Perguntas">perguntas</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Contato">contato</Link></li>
 
 </ul>
 
@@ -144,15 +144,9 @@ return(
 export function MenuMobile(){
 
 
-  const { ButtonMenu, setButtonMenu } = useMyContext();
+  const { ButtonMenu } = useMyContext();
   const [WidthMenu, setWidthMenu] = useState(window.innerWidth);
   
-  function TransicaoNav(){
-  
-  (setButtonMenu(false));
-   window.scrollTo(0, 0);
-  
-  }
   
   useEffect(()=>{
     
@@ -181,13 +175,13 @@ export function MenuMobile(){
   </div>
   
   <nav className={StyleNavBar.ConteinerButton}>
-  <a className={StyleNavBar.ButtonNavBar} href='#Home'>HOME</a>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Sobre'>SOBRE Nos</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Servicos'>Serviços</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Produto'>Produtos</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Reviews'>Reviews</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Perguntas'>Perguntas</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='#Contato'>Contato</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to="Home">HOME</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to="Sobre">SOBRE Nos</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to='Servicos'>Serviços</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to='Produto'>Produtos</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to='Reviews'>Reviews</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to='Perguntas'>Perguntas</Link>
+  <Link className={StyleNavBar.ButtonNavBar} to='Contato'>Contato</Link>
   </nav>
   
   
