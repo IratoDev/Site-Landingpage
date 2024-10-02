@@ -52,13 +52,13 @@ opacity: 0.8;
 
 .ElementProduto{
 
-flex: 0 0 25%;
-max-width: 25%;
+flex: 0 0 23%;
+max-width: 23%;
 
 .ConteinerProduto{
 
 border: 1px solid #eff0f1;
-padding: 35px 20px 45px;
+padding: 35px 45px;
 border-radius: 10px;
 background-color: #fafafa;
 
@@ -140,7 +140,6 @@ word-wrap: break-word;
 padding: 1em 0;
 background-color: #fff;
 background-clip: border-box;
-border: 1px solid rgba(0, 0, 0, .125);
 border-radius: 0.25rem;
 
 }
@@ -154,11 +153,9 @@ border-radius: 10px;
 border: 0;
 box-shadow: 0px 0px 15px 0px rgba(52, 69, 199, 0.4);
 background-color: #fff;
-transition: 0.5s;
 position: relative;
 
-padding: 0.75rem 1.25rem;
-padding-bottom: 15px;
+padding: 1.5em 1.25rem;
 font-family: var(--fontTitle);
 color: #000;
 
@@ -177,6 +174,8 @@ border-radius: 0 0 10px 10px;
 transition: 0.5s;
 font-size: 14px;
 line-height: 24px;
+margin-top: -10px;
+padding-top: 1em;
 
 .BoxText{
 
@@ -193,6 +192,42 @@ font-size: 1em;
 }
 
 }
+
+
+}
+
+
+//Elemento Serviço
+@media screen and (max-width: 760px) {
+
+.ElementService{
+
+flex: 100%;
+max-width: 100%;
+
+}
+
+}
+
+//Elemento Produto
+@media screen and (max-width: 760px) {
+
+.ElementProduto{
+flex: 0 0 100%;
+max-width: 100%;
+
+.ConteinerProduto{
+
+padding: 17px 15px;
+}
+
+}
+
+}
+
+//Modal Sanfona
+@media screen and (max-width: 760px) {
+
 
 
 }

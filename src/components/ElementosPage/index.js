@@ -110,7 +110,7 @@ return(
 
         <div onClick={() => handleClick("Element1")} className={StyleElement.ElementSanfona}>
 
-            <div className={StyleElement.ConteinerTitle}>
+            <div className={StyleElement.ConteinerTitle} style={{backgroundColor:(Focus === "Element1" ? "#2273f8" : "#fff"), color:(Focus === "Element1" ? "#FFF" : "#000") }}>
                 
             <h1>How can I buy the watch?</h1>
 

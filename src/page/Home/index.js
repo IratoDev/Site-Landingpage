@@ -6,6 +6,7 @@ import NavBar from "../../components/NavBar";
 import ElementService from "../../components/ElementosPage";
 import { ElementProduto } from "../../components/ElementosPage";
 import { ElementSanfona } from "../../components/ElementosPage";
+import { MenuMobile } from "../../components/NavBar";
 
 
 //imagens:
@@ -74,12 +75,15 @@ return (
 </head>
 
 <NavBar/>
+<MenuMobile/>
 
 <main>
 
 <section id={StyleHome.Home}>
 
 <div id={StyleHome.ConteinerHome}>
+
+<div id={StyleHome.BoxHome}>
 
 <div className={StyleHome.ConteinerText}>
 
@@ -97,7 +101,11 @@ return (
 
 <div className={StyleHome.ConteinerImage}>
 
+<div className={StyleHome.BoxImagem}>
 <img src={Relogio1} alt="Relogio1"/>
+</div>
+
+</div>
 
 </div>
 
@@ -258,9 +266,15 @@ return (
 
                     </div>
 
+                    <div className={StyleHome.ConteinerText}>
+
+                    <div className={StyleHome.BoxText}>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quas maxime vel alias minima possimus corrupti est voluptatum, iusto excepturi, veniam similique et. Officia fugit voluptatibus.
                     </p>
+                    </div>
+
+                    </div>
 
                     <div className={StyleHome.ConteinerStar}>
                     <span><i class="bi bi-star-fill"></i></span> 
@@ -287,9 +301,15 @@ return (
 
                     </div>
 
+                    <div className={StyleHome.ConteinerText}>
+
+                    <div className={StyleHome.BoxText}>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quas maxime vel alias minima possimus corrupti est voluptatum, iusto excepturi, veniam similique et. Officia fugit voluptatibus.
                     </p>
+                    </div>
+
+                    </div>
 
                     <div className={StyleHome.ConteinerStar}>
                     <span><i class="bi bi-star-fill"></i></span> 
@@ -316,9 +336,15 @@ return (
 
                     </div>
 
+                    <div className={StyleHome.ConteinerText}>
+
+                    <div className={StyleHome.BoxText}>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quas maxime vel alias minima possimus corrupti est voluptatum, iusto excepturi, veniam similique et. Officia fugit voluptatibus.
                     </p>
+                    </div>
+
+                    </div>
 
                     <div className={StyleHome.ConteinerStar}>
                     <span><i class="bi bi-star-fill"></i></span> 

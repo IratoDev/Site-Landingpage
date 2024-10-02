@@ -1,51 +1,48 @@
 
-main{
 
 #Home{
 
-background-image: url(../../asset/banner-1.png);
+background-image: url("../../asset/banner-1.png");
 background-repeat: no-repeat;
 background-position: left bottom;
 background-size: cover;
 
-padding: 30px 0 0;
 width: 100%;
-background-size: auto;
+padding: 6em 0;
 
 #ConteinerHome{
 
+padding: 0 40px;
+
+#BoxHome{
+
 display: flex;
 align-items: center;
-padding: 0 20px;
-
+padding: 0 10px;
 
 .ConteinerText{
 
-padding: 1em 3em;
+display: flex;
 font-family: var(--fontTitle);
 color: #fff;
 
+width: 50%;
+
 .BoxText{
 
-padding-top: 2em;
-margin: 0 -20px;
-line-height: 2.5;
+padding: 0 10px; 
 
 h1{
-
 font-size: 3.5em;
 font-weight: 800;
-padding-bottom: 0.5em;
 line-height: 1.1;
-
 }
 
 p{
-
+font-size: 1em;
 opacity: 0.8; 
-margin-top: -1em;
+margin-top: 0.5em;
 line-height: 2;
-
 }
 
 button{
@@ -57,7 +54,11 @@ border-radius: 30px;
 border: none;
 display: inline-block;
 font-weight: 600;
-margin: 40px 0 0;
+margin-top: 3em;
+
+i{
+font-size: 2em;
+}
 
 }
 
@@ -67,9 +68,13 @@ margin: 40px 0 0;
 
 .ConteinerImage{
 
-width: 100%;
-padding: 0 3em;
-margin-top: 4em;
+width: 50%;
+
+.BoxImagem{
+
+padding: 0 40px;
+display: flex;
+justify-content: center;
 
 img{
 
@@ -80,6 +85,9 @@ height: auto;
 
 }
 
+}
+
+}
 
 }
 
@@ -87,7 +95,7 @@ height: auto;
 
 #Sobre{
 
-padding: 100px 0;
+padding: 6em 0;
 width: 100%;
 
 #ConteinerSobre{
@@ -98,16 +106,14 @@ padding: 0 20px;
 
 .ConteinerTextSobre{
 
-padding: 0 20px;
-margin: 0 -20px;
-
-font-family: var(--fontTitle);
-color: #000;
+width: 50%;
 
 .BoxTextSobre{
 
 padding: 0 40px;
 line-height: 3.5;
+font-family: var(--fontTitle);
+color: #000;
 
 h3{
 font-size: 1.5em;
@@ -148,17 +154,15 @@ font-weight: bold;
 
 .ConteinerImgSobre{
 
-width: 100%;
-padding: 0 3em;
+width: 50%;
 
 .BoxImgSobre{
 
 padding: 0 20px;
-margin: 0 -20px;
 
 img{
 
-max-width: 100%;
+width: 100%;
 height: auto;
 border-radius: 20px;
 
@@ -174,12 +178,14 @@ border-radius: 20px;
 
 #Servicos{
 
-display: block;
+padding: 6em 0;
 width: 100%;
-padding: 90px 0 30px;
 
 #ConteinerServicos{
 
+display: flex;
+flex-direction: column;
+align-items: center;
 padding: 0 40px;
 
 .ConteinerCabecalho{
@@ -187,19 +193,16 @@ padding: 0 40px;
 display: flex;
 align-items: center;
 justify-content: center;
-flex-wrap: wrap;
+width: 50%;
 
-margin: 0 -15px;
+margin-bottom: 3em;
 
 .BoxTextCabecalho{
-
 
 text-align: center;
 flex-wrap: wrap;
 
-flex: 0 0 50%;
-margin: 0 17em;
-padding: 20px;
+padding: 0 20px;
 line-height: 1.5;
 font-family: var(--fontTitle);
 color: #000;
@@ -223,13 +226,13 @@ opacity: 0.8;
 
 .ConteinerService{
 
-padding: 3em 40px;
+padding: 3em 20px;
 
 .BoxService{
 
 display: flex;
 flex-wrap: wrap;
-margin: 0 -20px;
+padding: 0 10px;
 
 
 }
@@ -239,30 +242,31 @@ margin: 0 -20px;
 }
 
 }
+
 
 #Produto{
 
-padding: 6em 0;
+padding: 3em 0;
 width: 100%;
-margin: 0 -25px;
 
 #ConteinerProduto{
 
+display: flex;
+flex-direction: column;
+align-items: center;
 padding: 0 40px;
-margin: 0 auto;
 
 .ConteinerCabecalhoProduto{
 
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding: 0 6em;
-margin: 0 -25px;
+width: 50%;
+margin-bottom: 3em;
 
 .BoxTextProduto{
 
-padding: 0 3em;
-margin: 0 17em;
+padding: 0 20px;
 font-family: var(--fontTitle);
 color: #000;
 text-align: center;
@@ -290,12 +294,13 @@ line-height: 1.5;
 .ConteinerProdutos{
 
 padding: 0 40px;
-margin: 0 15px;
 
 .BoxProduto{
 
 padding: 0 20px;
 display: flex;
+align-items: center;
+gap: 1em;
 flex-wrap: wrap;
 
 }
@@ -306,9 +311,10 @@ flex-wrap: wrap;
 
 }
 
+//responsividade
 #Reviews{
 
-padding: 90px 0 135px;
+padding: 6em 0;
 width: 100%;
 background-image: url("../../asset/banner-1.jpg");
 background-repeat: no-repeat;
@@ -317,8 +323,10 @@ background-size: cover;
 
 #ConteinerReviews{
 
+display: flex;
+flex-direction: column;
+align-items: center;
 padding: 0 40px;
-margin: 0 auto;
 
 .ConteinerCabecalo{
 
@@ -326,7 +334,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: nowrap;
-padding: 0 40px;
+width: 50%;
 padding-bottom: 3.5em;
 margin: 0 -25px;
 
@@ -337,7 +345,7 @@ color: #fff;
 text-align: center;
 font-family: var(--fontTitle);
 line-height: 2.5;
-width: 60%;
+padding: 0 40px;
 
 h1{
 font-size: 2.5em;
@@ -362,14 +370,12 @@ display: flex;
 flex-wrap: wrap;
 position: relative;
 z-index: 1;
-padding: 0 60px;
 overflow: hidden;
 
 #ConteinerCarrosel{
 
 display: flex;
-min-width: 100%;
-border: 1px solid red;
+width: 100%;
 transition: transform 0.5s ease-in-out;
 
 .SlideReview{
@@ -384,8 +390,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-padding: 0 2em;
-margin: 0 15px;
 
 color: #fff;
 font-family: var(--fontTitle);
@@ -419,10 +423,21 @@ opacity: 0.8;
 
 }
 
+.ConteinerText{
+
+width: 50%;
+
+.BoxText{
+
+padding: 0 20px;
+
 p{
 font-size: 1em;
 opacity: 0.8;
-padding: 2em;
+}
+
+}
+
 }
 
 .ConteinerStar{
@@ -453,6 +468,7 @@ color: #f39c12 !important;
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 1em;
 position: absolute;
 z-index: 2;
 left: 0;
@@ -461,18 +477,15 @@ bottom: 0;
 width: 100%;
 
 text-align: center;
-border: 1px solid red;
 
 
 button{
 cursor: pointer;
-width: 25px;
+width: 45px;
 display: inline-block;
-height: 10px;
-margin: 0 4px;
+height: 15px;
 background-color: #fff;
 border-radius: 2px;
-margin: 0 4px;
 border: 0;
 outline: 0;  
 }
@@ -489,12 +502,14 @@ outline: 0;
 
 display: block;
 width: 100%;
-padding: 90px 0 72px;
+padding: 6em 0;
 
 #ConteinerPerguntas{
 
-padding: 0 15px;
-margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 40px;
 
 #ConteinerTitlePerguntas{
 
@@ -502,15 +517,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-margin: 0 -15px;
+margin-bottom: 6em;
+width: 50%;
 
 .BoxText{
 
-flex: 0 0 50%;
-max-width: 50%;
-min-height: 1px;
-padding: 0 15px;
-
+padding: 0 20px;
 font-family: var(--fontTitle);
 color: #000;
 text-align: center;
@@ -534,8 +546,7 @@ opacity: 0.8;
 display: flex;
 align-items: top;
 justify-content: center;
-margin: 0 -15px;
-padding: 6em 1em;
+width: 100%;
 
 #BoxPerguntas{
 
@@ -575,31 +586,31 @@ height: auto;
 
 #Contato{
 
-padding: 90px 0 85px;
+padding: 3em 0;
 width: 100%;
 
 #ConteinerContato{
 
 display: flex;
+align-items: center;
 flex-direction: column;
 padding: 0 40px;
-margin: 0 auto;
 
 .ConteinerCabecalho{
 
-padding: 0 20px;
-margin: 0 auto;
+width: 50%;
 
 .BoxText{
 
-padding: 0 10px;
-margin: 0 -15px;
+padding: 0 20px;
 font-family: var(--fontTitle);
 color: #000;
+text-align: center;
 
 h1{
 font-size: 2.5em;
 font-weight: 800;
+margin-bottom: 0.5em;
 }
 
 p{
@@ -613,14 +624,13 @@ opacity: 0.8;
 
 .ConteinerInfo{
 
-display: flex;
 width: 100%;
-padding-top:6em;
+margin-top:6em;
 
 .BoxInfo{
 
 display: flex;
-width: 100%;
+padding: 20px;
 
 .InfoContato{
 
@@ -686,9 +696,10 @@ transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 form{
 
 display: flex;
+gap: 1em;
 flex-wrap: wrap;
-flex: 0 0 66.666667%;
-max-width: 66.666667%;
+flex: 0 0 100%;
+max-width: 100%;
 
 input{
 height: 50px;
@@ -727,13 +738,11 @@ cursor: pointer;
 
 }
 
-}
-
 
 footer{
 
 width: 100%;
-padding: 65px 0 20px;
+padding: 45px 0 !important;
 background-color: #1c1c1c;
 overflow: hidden;
 
@@ -743,8 +752,9 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-line-height: 3;
+padding: 0 40px;
 color: #fff;
+line-height: 3;
 font-family: var(--fontTitle);
 
 h4{
@@ -776,8 +786,476 @@ text-align: center;
 
 p{
 font-size: 1em;
+line-height: 1.5;
+margin-top: 40px;
 }
 
 }
 
 }
+
+//Home
+@media screen and (max-width: 760px) {
+   
+#Home #ConteinerHome{
+
+padding: 20px;
+
+#BoxHome{
+
+flex-direction: column;
+
+.ConteinerText{
+
+width: 100%;
+
+.BoxText{
+
+text-align: center;
+padding: 40px 10px;
+margin-bottom: 1em;
+
+h1{
+font-size: 2.5em;
+}
+
+
+button{
+
+margin-top: 3em;
+
+}
+
+}
+
+}
+
+.ConteinerImage{
+
+width: 100%;
+
+.BoxImagem{
+
+padding: 0 40px;
+display: flex;
+justify-content: center;
+
+img{
+
+width: 100%;
+height: auto;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+//Sobre
+@media screen and (max-width: 760px) {
+
+#Sobre #ConteinerSobre{
+flex-direction: column;
+
+.ConteinerTextSobre{
+    
+width: 100%;
+margin-bottom: 3em;
+
+.BoxTextSobre{
+
+padding: 0 10px;
+line-height: 3.5;
+text-align: center;
+
+h3{
+font-size: 1.5em;
+color: #2273f8;
+line-height: 1;
+}
+
+h1{
+font-size: 2em;
+font-weight: 800;
+line-height: 1.4;
+margin: 0 0 10px
+}
+
+p{
+font-size: 1em;
+opacity: 0.8;
+line-height: 1.5;
+}
+
+ul{
+
+padding-top: 1em;
+line-height: 2;
+
+li{
+font-size: 1em;
+font-weight: bold;
+
+}
+
+}
+
+
+}
+}
+
+.ConteinerImgSobre{
+
+width: 100%;
+
+.BoxImgSobre{
+
+padding: 0 20px;
+margin: 0 -20px;
+
+img{
+
+max-width: 100%;
+height: auto;
+border-radius: 20px;
+
+}
+
+}
+
+}
+
+}
+
+}
+
+//service
+@media screen and (max-width: 760px) {
+
+#Servicos #ConteinerServicos{
+
+padding: 0 20px;
+
+.ConteinerCabecalho{
+
+width: 100%;
+padding: 0 20px;
+
+.BoxTextCabecalho{
+
+text-align: center;
+padding: 0;
+
+h1{
+
+font-size: 2em;
+font-weight: 800;
+
+
+}
+
+p{
+font-size: 1em;
+opacity: 0.8;
+}
+
+}
+
+}
+
+.ConteinerService{
+
+padding: 3em 40px;
+
+.BoxService{
+
+display: flex;
+flex-wrap: wrap;
+margin: 0 -20px;
+}
+
+
+
+}
+
+}
+
+}
+
+//Produtos
+@media screen and (max-width: 760px) {
+
+#Produto #ConteinerProduto{
+
+padding: 0 10px;
+
+.ConteinerCabecalhoProduto{
+
+width: 100%;
+margin-bottom: 3em;
+
+.BoxTextProduto{
+
+padding: 0 20px;
+
+h1{
+font-weight: 800;
+font-size: 2em;
+line-height: 1.3;
+padding-bottom: 0.5em;
+
+}
+
+p{
+font-size: 1em;
+opacity: 0.8;
+line-height: 1.5;
+
+}
+
+}
+
+}
+}
+
+
+}
+
+//Review
+@media screen and (max-width: 760px) {
+
+#Reviews #ConteinerReviews{
+
+padding: 0 20px;
+
+.ConteinerCabecalo{
+
+width: 100%;
+
+.BoxText{
+
+padding: 0 20px;
+
+}
+
+}
+
+.ConteinerReview{
+
+
+#ConteinerCarrosel .SlideReview .BoxSlides{
+
+
+.conteinerPerfil{
+
+padding: 0 10px;
+line-height: 1.5;
+padding-bottom: 1em;
+
+img{
+
+width: 80%;
+border-radius: 50%;
+height: auto;
+
+}
+
+h3{
+font-size: 1.5em;
+font-weight: 600;
+margin: 0;
+}
+
+h5{
+font-size: 1em;
+opacity: 0.8;
+}
+
+}
+
+.ConteinerText{
+
+width: 100%;
+
+.BoxText{
+
+padding: 0 10px;
+
+}
+
+}
+
+
+}
+
+}
+
+}
+
+#ConteinerControler{
+
+button{
+width: 55px; 
+}
+
+}
+
+}
+
+
+
+//Perguntas
+@media screen and (max-width: 760px) {
+
+#Perguntas #ConteinerPerguntas{
+
+padding: 0 20px;
+
+#ConteinerTitlePerguntas{
+
+width: 100%;
+
+.BoxText{
+padding: 0 20px;
+
+}
+
+}
+
+.ConteienerBoxPerguntas{
+
+flex-direction: column;
+
+#BoxPerguntas{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin-bottom: 3em;
+
+}
+
+#conteinerImg{
+
+flex: 0 0 100%;
+width: 100%;
+
+
+.BoxImagem{
+
+padding: 0 40px;
+
+img{
+width: 100%;
+max-width: 300px;
+height: auto;
+}
+
+}
+
+}
+
+}
+}
+}
+
+
+//Contato
+@media screen and (max-width: 760px) {
+
+#Contato #ConteinerContato{
+
+.ConteinerCabecalho{
+
+width: 100%;
+
+.BoxText{
+
+padding: 0 10px;
+margin: 0 -15px;
+
+
+h1{
+font-size: 2.5em;
+font-weight: 800;
+}
+
+p{
+font: 1em;
+opacity: 0.8;
+}
+
+}
+
+}
+
+.ConteinerInfo .BoxInfo{
+
+flex-direction: column;
+
+.InfoContato{
+
+flex: 0 0 100%;
+max-width: 100%;
+
+.ElementInfo{
+
+display: flex;
+width: 100%;
+margin: 0 0 30px;
+overflow: hidden;
+
+span{
+font-size: 30px;
+color: #2273f8;
+border: 1.2px solid #2273f8;
+border-radius: 4px;
+width: 55px;
+height: 55px;
+display: inline-block;
+line-height: 55px;
+text-align: center;
+}
+
+.ConteinerText{
+
+font-family: var(--fontTitle);
+padding: 0 10px;
+
+p{
+font-weight: 500;
+font-size: 1em;
+color: #555;
+}
+    
+}
+    
+}
+    
+}
+
+.ConteinerForm{
+
+
+form{
+
+gap: 1.5em;
+flex: 0 0 100%;
+max-width: 100%;
+
+}
+
+}
+}
+
+}
+
+}
+
