@@ -58,7 +58,7 @@ max-width: 23%;
 .ConteinerProduto{
 
 border: 1px solid #eff0f1;
-padding: 35px 45px;
+padding: 35px 25px;
 border-radius: 10px;
 background-color: #fafafa;
 
@@ -107,6 +107,13 @@ background-color: #2273f8;
 font-weight: 600;
 border-radius: 30px;
 border: none;
+
+&:hover{
+color: #2273f8;
+background-color: #fff;
+border: 2px solid #2273f8;
+}
+
 }
 
 }

@@ -44,6 +44,10 @@
   font-weight: 600;
   margin-top: 3em;
 }
+#Home #ConteinerHome #BoxHome .ConteinerText .BoxText button:hover {
+  color: #131a48;
+  background-color: #fff;
+}
 #Home #ConteinerHome #BoxHome .ConteinerText .BoxText button i {
   font-size: 2em;
 }
@@ -115,7 +119,7 @@
 }
 
 #Servicos {
-  padding: 6em 0;
+  padding: 3em 0;
   width: 100%;
 }
 #Servicos #ConteinerServicos {
@@ -192,10 +196,10 @@
   line-height: 1.5;
 }
 #Produto #ConteinerProduto .ConteinerProdutos {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 #Produto #ConteinerProduto .ConteinerProdutos .BoxProduto {
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -257,7 +261,7 @@
 }
 #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview {
   min-width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides {
   display: flex;
@@ -322,7 +326,12 @@
   right: 0;
   bottom: 0;
   width: 100%;
+  padding-bottom: 1.5em;
   text-align: center;
+}
+#Reviews #ConteinerReviews .ConteinerReview #ConteinerControler .focused {
+  background-color: #f39c12;
+  filter: drop-shadow(1px 1px 10px #87b7ff);
 }
 #Reviews #ConteinerReviews .ConteinerReview #ConteinerControler button {
   cursor: pointer;
@@ -544,6 +553,34 @@ footer #ConteinerFooter p {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 845px) {
+  #Home #ConteinerHome #BoxHome .ConteinerText .BoxText {
+    margin: 0 -35px;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Servicos #ConteinerServicos .ConteinerCabecalho {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Produto #ConteinerProduto .ConteinerCabecalhoProduto {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 845px) {
+  #Reviews #ConteinerReviews .ConteinerCabecalo {
+    width: 70%;
+  }
+  #Reviews #ConteinerReviews .ConteinerReview #ConteinerCarrosel .SlideReview .BoxSlides .ConteinerText {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 760px) {
   #Home #ConteinerHome {
     padding: 20px;
@@ -557,6 +594,7 @@ footer #ConteinerFooter p {
   #Home #ConteinerHome #BoxHome .ConteinerText .BoxText {
     text-align: center;
     padding: 40px 10px;
+    margin: 0;
     margin-bottom: 1em;
   }
   #Home #ConteinerHome #BoxHome .ConteinerText .BoxText h1 {

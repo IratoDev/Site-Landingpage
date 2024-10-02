@@ -8,6 +8,7 @@ import { ElementProduto } from "../../components/ElementosPage";
 import { ElementSanfona } from "../../components/ElementosPage";
 import { MenuMobile } from "../../components/NavBar";
 import { Element } from "react-scroll";
+import { ObservedElement } from "../../Mycontext/Context";
 
 //imagens:
 //Relogios
@@ -66,6 +67,7 @@ const handleClick = (slide) => {
 setFocus(slide); 
 };
 
+
 return (
   
 <>
@@ -83,6 +85,7 @@ return (
 <Element name="Home">
 <section id={StyleHome.Home} className="Home">
 
+<ObservedElement id="element1">
 <div id={StyleHome.ConteinerHome}>
 
 <div id={StyleHome.BoxHome}>
@@ -112,6 +115,7 @@ return (
 </div>
 
 </div>
+</ObservedElement>
 
 </section>
 </Element>
@@ -371,9 +375,9 @@ return (
 
         <div id={StyleHome.ConteinerControler}>
 
-                <button onClick={() => { handleClick('Slide1'); setCurrentItem(0)}} ref={btn1}><span></span></button>
-                <button onClick={() => { handleClick('Slide2'); setCurrentItem(1)}} ref={btn2}><span></span></button>
-                <button onClick={() => { handleClick('Slide3'); setCurrentItem(2)}} ref={btn3}><span></span></button>
+                <button className={Focus === 'Slide1' ? StyleHome.focused : ''} onClick={() => { handleClick('Slide1'); setCurrentItem(0)}} ref={btn1}><span></span></button>
+                <button className={Focus === 'Slide2' ? StyleHome.focused : ''} onClick={() => { handleClick('Slide2'); setCurrentItem(1)}} ref={btn2}><span></span></button>
+                <button className={Focus === 'Slide3' ? StyleHome.focused : ''} onClick={() => { handleClick('Slide3'); setCurrentItem(2)}} ref={btn3}><span></span></button>
 
         </div>
 

@@ -40,6 +40,11 @@ header #ConteinerCabecalho .ConteinerNavegacao ul li .StyleButton {
   padding: 0 15px;
   letter-spacing: 2px;
   padding: 0 8px;
+  transition: all 5ms ease-in-out;
+}
+header #ConteinerCabecalho .ConteinerNavegacao ul li .StyleButton:hover {
+  color: #3a54fd !important;
+  border-bottom: 2px solid #3a54fd !important;
 }
 header .ConteinerNavMobile {
   display: flex;
@@ -86,7 +91,7 @@ header .ConteinerNavMobile nav .BoxButton button i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
   margin-top: 3em;
 }
 #MenuMobile #conteinerMenuMobile .ConteinerButton a {

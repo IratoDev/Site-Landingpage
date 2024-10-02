@@ -47,6 +47,7 @@ const NavBarStyle={
 backgroundColor: ( scroll > 0 ? "#fff" : "transparent"),
 color:( scroll > 0 ? "#212529" : "transparent"),
 
+
 }
 
 const Logo =() =>{
@@ -84,7 +85,6 @@ return <header style={NavBarStyle}>
 </ul>
 
 </nav>
-
 
 </div>
 

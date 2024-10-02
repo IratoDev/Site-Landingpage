@@ -130,7 +130,7 @@ return(
 
         <div onClick={() => handleClick("Element2")} className={StyleElement.ElementSanfona}>
 
-            <div className={StyleElement.ConteinerTitle}>
+            <div className={StyleElement.ConteinerTitle} style={{backgroundColor:(Focus === "Element2" ? "#2273f8" : "#fff"), color:(Focus === "Element2" ? "#FFF" : "#000") }}>
                 
             <h1>How can I order the watch?</h1>
 
@@ -150,7 +150,7 @@ return(
 
         <div onClick={() => handleClick("Element3")} className={StyleElement.ElementSanfona}>
 
-            <div className={StyleElement.ConteinerTitle}>
+            <div className={StyleElement.ConteinerTitle} style={{backgroundColor:(Focus === "Element3" ? "#2273f8" : "#fff"), color:(Focus === "Element3" ? "#FFF" : "#000") }}>
                 
             <h1>How much price of the watch?</h1>
 
@@ -170,7 +170,7 @@ return(
 
         <div onClick={() => handleClick("Element4")} className={StyleElement.ElementSanfona}>
 
-            <div className={StyleElement.ConteinerTitle}>
+            <div className={StyleElement.ConteinerTitle} style={{backgroundColor:(Focus === "Element4" ? "#2273f8" : "#fff"), color:(Focus === "Element4" ? "#FFF" : "#000") }}>
                 
             <h1>How can I get refund?</h1>
 
