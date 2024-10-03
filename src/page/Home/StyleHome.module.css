@@ -12,7 +12,7 @@
 #Home #ConteinerHome #BoxHome {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 20px 10px;
 }
 #Home #ConteinerHome #BoxHome .ConteinerText {
   display: flex;
@@ -625,7 +625,7 @@ footer #ConteinerFooter p {
     margin-bottom: 3em;
   }
   #Sobre #ConteinerSobre .ConteinerTextSobre .BoxTextSobre {
-    padding: 0 10px;
+    padding: 0 20px;
     line-height: 3.5;
     text-align: center;
   }

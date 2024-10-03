@@ -60,7 +60,6 @@ if (ConteinerSlide.current) {
     ConteinerSlide.current.style.transform = `translate3d(${-CurrentItem * 100}%, 0, 0)`; 
 }
 
-console.log(CurrentItem)
 },[CurrentItem])
 
 const handleClick = (slide) => {

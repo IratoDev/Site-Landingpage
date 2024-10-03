@@ -11,10 +11,11 @@ import logo2 from "../../asset/logo-scroll.png";
 
 export default function NavBar(){
 
-const { ButtonMenu, setButtonMenu } = useMyContext();
+
 const [Nav] = useState(false);
 const [scroll, setScroll] = useState(0);
 const [Width, setWidth] = useState(window.innerWidth);
+const { ButtonMenu, setButtonMenu, Focus, setFocus, CurrentItem, setCurrentItem } = useMyContext();
 
 const handleButtonClick = () => {
 setButtonMenu(!ButtonMenu);
@@ -33,14 +34,15 @@ setWidth(window.innerWidth);
 window.addEventListener("scroll", handleScroll);
 window.addEventListener('resize', handleWidth);
   
-console.log("largura:", window)
-  
 return () => {
 window.removeEventListener("scroll", handleScroll);
 window.removeEventListener('resize', handleWidth);
 };
 }, [scroll, Nav, Width,ButtonMenu]);
 
+const handleClick = (btn) => {
+setFocus(btn); 
+};
 
 const NavBarStyle={
 
@@ -74,13 +76,48 @@ return <header style={NavBarStyle}>
 
 <ul>
 
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Home">home</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Sobre">sobre Nos</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Servicos">serviços</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Produto">produto</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Reviews">reviews</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Perguntas">perguntas</Link></li>
-<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={StyleNavBar.StyleButton} to ="Contato">contato</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn1' ? StyleNavBar.focused : ''}`} to ="Home"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn1'); setCurrentItem(0)}}
+    >home</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn2' ? StyleNavBar.focused : ''}`} to ="Sobre"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn2'); setCurrentItem(1)}}
+    >sobre Nos</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn3' ? StyleNavBar.focused : ''}`} to ="Servicos"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn3'); setCurrentItem(2)}}
+    >serviços</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn4' ? StyleNavBar.focused : ''}`} to ="Produto"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn4'); setCurrentItem(3)}}
+    >produto</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn5' ? StyleNavBar.focused : ''}`} to ="Reviews"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn5'); setCurrentItem(4)}}
+    >reviews</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn6' ? StyleNavBar.focused : ''}`} to ="Perguntas"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn6'); setCurrentItem(5)}}
+    >perguntas</Link></li>
+<li ><Link style={{color: (scroll <= 0 ? "#FFF" : "#212529")}} className={`${StyleNavBar.StyleButton} ${Focus === 'btn7' ? StyleNavBar.focused : ''}`} to ="Contato"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn7'); setCurrentItem(6)}}
+    >contato</Link></li>
 
 </ul>
 
@@ -144,8 +181,9 @@ return(
 export function MenuMobile(){
 
 
-  const { ButtonMenu } = useMyContext();
+  const { ButtonMenu, setButtonMenu, Focus, setFocus, CurrentItem, setCurrentItem } = useMyContext();
   const [WidthMenu, setWidthMenu] = useState(window.innerWidth);
+ 
   
   
   useEffect(()=>{
@@ -160,7 +198,11 @@ export function MenuMobile(){
     window.removeEventListener('resize', handleWidthMenu);
   };
   
-  },[ WidthMenu,ButtonMenu])
+  },[ WidthMenu,ButtonMenu]);
+
+  const handleClick = (btn) => {
+  setFocus(btn); 
+  };
   
   const Menu = ()=>{
   
@@ -175,13 +217,49 @@ export function MenuMobile(){
   </div>
   
   <nav className={StyleNavBar.ConteinerButton}>
-  <Link className={StyleNavBar.ButtonNavBar} to="Home">HOME</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to="Sobre">SOBRE Nos</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='Servicos'>Serviços</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='Produto'>Produtos</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='Reviews'>Reviews</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='Perguntas'>Perguntas</Link>
-  <Link className={StyleNavBar.ButtonNavBar} to='Contato'>Contato</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn1' ? StyleNavBar.focused : ''}`} to="Home"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn1'); setCurrentItem(0)}}
+
+    >HOME</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn2' ? StyleNavBar.focused : ''}`} to="Sobre"  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn2'); setCurrentItem(1)}}
+    >SOBRE Nos</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn3' ? StyleNavBar.focused : ''}`} to='Servicos'  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn3'); setCurrentItem(2)}}
+    >Serviços</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn4' ? StyleNavBar.focused : ''}`} to='Produto'  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn4'); setCurrentItem(3)}}
+    >Produtos</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn5' ? StyleNavBar.focused : ''}`} to='Reviews'  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn5'); setCurrentItem(4)}}
+    >Reviews</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn6' ? StyleNavBar.focused : ''}`} to='Perguntas'  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn6'); setCurrentItem(5)}}
+    >Perguntas</Link>
+  <Link className={`${StyleNavBar.ButtonNavBar} ${Focus === 'btn7' ? StyleNavBar.focused : ''}`} to='Contato'  spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    onClick={() => { handleClick('btn7'); setCurrentItem(6)}}
+    >Contato</Link>
   </nav>
   
   

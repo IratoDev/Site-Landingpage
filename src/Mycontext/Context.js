@@ -9,6 +9,8 @@ export const MyContext = createContext();
 export const ProviderContext = ({ children }) => {
   const [elements, setElements] = useState({});
   const [ButtonMenu, setButtonMenu] = useState(false);
+  const [Focus, setFocus]=useState("btn1");
+  const[CurrentItem, setCurrentItem] = useState(0);
 
   // Usando useCallback para garantir que as funções sejam estáveis
   const registerElement = useCallback((id) => {
@@ -20,17 +22,17 @@ export const ProviderContext = ({ children }) => {
   }, []);
 
   return (
-    <MyContext.Provider value={{ elements, ButtonMenu, setButtonMenu, registerElement, updateElementVisibility }}>
+    <MyContext.Provider value={{ elements, ButtonMenu, setButtonMenu, registerElement, updateElementVisibility,Focus, setFocus, CurrentItem, setCurrentItem }}>
       {children}
     </MyContext.Provider>
   );
 };
 
-// ObservedElement movido para fora do contexto
+// ObservedElement
 export const ObservedElement = ({ id, children }) => {
-  const { registerElement, updateElementVisibility, elements } = React.useContext(MyContext);
+  const { registerElement, updateElementVisibility, elements, setFocus } = React.useContext(MyContext);
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 
@@ -41,9 +43,39 @@ export const ObservedElement = ({ id, children }) => {
   useEffect(() => {
     if (inView) {
       updateElementVisibility(id, true);
-      console.log("view disparado");
+
+      switch (id) {
+          case'element1':
+          setFocus('btn1'); 
+          break;
+          case'element2':
+          setFocus('btn2');
+          break;
+          case 'element3':
+          setFocus('btn3'); 
+          break;
+          case'element4':
+          setFocus('btn4');
+          break;
+          case 'element5':
+          setFocus('btn5'); 
+          break;
+          case'element6':
+          setFocus('btn6');
+          break;
+          case 'element7':
+          setFocus('btn7');
+          break;
+        
+        default:
+          setFocus('default');
+          break;
+      }
+
     }
-  }, [inView, id, updateElementVisibility]);
+  }, [inView, id, updateElementVisibility, setFocus]);
+
+console.log(elements)
 
   return (
     <div ref={ref} className={elements[id] ? 'element visible' : 'element'}>
